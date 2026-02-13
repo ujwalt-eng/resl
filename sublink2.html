@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sub Link 2</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function checkLogin() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Credentials for Sub Link 2
+      if (username === "user2" && password === "pass2") {
+        window.location.href = "r2.html";
+      } else {
+        alert("Wrong login. Try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login for

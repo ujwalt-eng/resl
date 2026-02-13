@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sub Link 1</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function checkLogin() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "user1" && password === "pass1") {
+        window.location.href = "r1.html";
+      } else {
+        alert("Wrong login. Try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login for Sub Link 1</h2>
+    <form onsubmit="event.preventDefault(); checkLogin();">
+      <input type="text" id="username" placeholder="Username"><br>
+      <input type="password" id="password" placeholder="Password"><br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</body>
+</html>
